@@ -22,7 +22,7 @@ enum unicode_names {
   HEART, // heart ❤
   OKHND, // ok hand sign 👌
   THINK, // thinking face 🤔
-  CLAP, // clap 👏
+  CLAP,  // clap 👏
   TJOY,  // tears of joy 😂
   UNAMU, // unamused 😒
   WINK,  // wink 😉
@@ -37,7 +37,7 @@ const uint32_t PROGMEM unicode_map[] = {
   [HEART] = 0x2764,  // 0x2764
   [OKHND] = 0x1E44C, // 0x1F44C
   [THINK] = 0x1E914, // 0x1F914
-  [CLAP]  = 0x1F44F, // 0x1F44F
+  [CLAP]  = 0x1E44E, // 0x1F44F
   [TJOY]  = 0x1E602, // 0x1F602
   [UNAMU] = 0x1E612, // 0x1F612
   [WINK]  = 0x1E609, // 0x1F609
