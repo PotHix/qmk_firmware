@@ -1,1 +1,3 @@
+EXTRAFLAGS += -flto
+
 UNICODEMAP_ENABLE = yes

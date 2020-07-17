@@ -17,5 +17,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// #define USE_I2C
 #define EE_HANDS
+
+// I'm only using Linux, so let's set the Linux mode
+#define UNICODE_SELECTED_MODES UC_LNX
+
+// Using "I" because it translates to "U" on Colemak
+#define UNICODE_KEY_LNX  LCTL(LSFT(KC_I))
+
+// Both are not supported when using lto compilation
+// I'm disabling them since I enabled it on `rules.mk`
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
