@@ -16,31 +16,31 @@ enum custom_keycodes {
 enum unicode_names {
   CRY2,  // crying face 😢
   CELEB, // celebration 🙌
-  DISAP, // disappointed 😞
+  CONFU, // confused 😕
   EYES,  // eyes 👀
   GRIN,  // grinning face 😊
   HEART, // heart ❤
   OKHND, // ok hand sign 👌
   THINK, // thinking face 🤔
-  THMUP, // thumb up 👍
+  CLAP, // clap 👏
   TJOY,  // tears of joy 😂
   UNAMU, // unamused 😒
   WINK,  // wink 😉
 };
 
 const uint32_t PROGMEM unicode_map[] = {
-  [CRY2]  = 0x1F622,
-  [CELEB] = 0x1F64C,
-  [DISAP] = 0x1F61E,
-  [EYES]  = 0x1F440,
-  [GRIN]  = 0x1F600,
-  [HEART] = 0x2764,
-  [OKHND] = 0x1F44C,
-  [THINK] = 0x1F914,
-  [THMUP] = 0x1F44D,
-  [TJOY]  = 0x1F602,
-  [UNAMU] = 0x1F612,
-  [WINK]  = 0x1F609,
+  [CRY2]  = 0x1E622, // 0x1F622
+  [CELEB] = 0x1E64C, // 0x1F64C
+  [CONFU] = 0x1E615, // 0x1F615
+  [EYES]  = 0x1E440, // 0x1F440
+  [GRIN]  = 0x1E600, // 0x1F600
+  [HEART] = 0x2764,  // 0x2764
+  [OKHND] = 0x1E44C, // 0x1F44C
+  [THINK] = 0x1E914, // 0x1F914
+  [CLAP]  = 0x1F44F, // 0x1F44F
+  [TJOY]  = 0x1E602, // 0x1F602
+  [UNAMU] = 0x1E612, // 0x1F612
+  [WINK]  = 0x1E609, // 0x1F609
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -74,9 +74,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 // └────────┴────────┴────────┘           └────────┴────────┴────────┘
   ),
 
+
+
+
+
+
+
+
+
+
+
+
+  // EMOJIS
+  //┌────────┬────────┬────────┬────────┬────────┬────────┐                    ┌────────┬────────┬────────┬────────┬────────┬────────┐
+  //    😢       🙌       😕       👀       😊        ❤                            👌       🤔       👏       😂       😒       😉
+  //└────────┴────────┴────────┴────────┴────────┴────────┘                    └────────┴────────┴────────┴────────┴────────┴────────┘
+
   [_RAISE] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                    ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     X(CRY2), X(CELEB),X(DISAP),X(EYES), X(GRIN), X(HEART),                     X(OKHND),X(THINK),X(THMUP),X(TJOY), X(UNAMU),X(WINK),
+     X(CRY2), X(CELEB),X(CONFU),X(EYES), X(GRIN), X(HEART),                     X(OKHND),X(THINK),X(CLAP),X(TJOY), X(UNAMU),X(WINK),
   //├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
      RGB_TOG, _______, _______, _______, _______, _______,                      _______, _______, _______, _______, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
