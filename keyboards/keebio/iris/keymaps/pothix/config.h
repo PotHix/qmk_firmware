@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Using "I" because it translates to "U" on Colemak
 #define UNICODE_KEY_LNX  LCTL(LSFT(KC_I))
 
+#define RGBLIGHT_LIMIT_VAL 150
+
 // Both are not supported when using lto compilation
 // I'm disabling them since I enabled it on `rules.mk`
 #define NO_ACTION_MACRO
